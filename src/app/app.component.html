@@ -1,8 +1,49 @@
-<style>
-  .hello-world {
-    font-size: 38px;
-    color: #333;
-  }
-</style>
 
-<h1 class="hello-world">Hello World</h1>
+
+<header class="topbar">
+  <span>Conversion Number</span>
+</header>
+
+<main>
+  <section class="container">
+    <header class="text-hero">
+      <p class="text-hero__title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="136" height="136" viewBox="0 0 136 136" fill="none">
+          <rect width="99" height="99" rx="30" transform="matrix(0.866025 -0.5 -0.5 -0.866025 49.5 135.237)" fill="url(#paint0_linear)" fill-opacity="0.3"/>
+          <defs>
+            <linearGradient id="paint0_linear" x1="52.8714" y1="118.219" x2="135.484" y2="45.2505" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1CA78B"/>
+              <stop offset="1" stop-color="#178B74"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        Turn numbers (dollar) into <span class="text-primary">text</span>
+      </p>
+    </header>
+
+    <div class="two-button-pills select-convert-type">
+      <button class="btn active">Number to dollar</button>
+      <button class="btn">Number to text</button>
+    </div>
+    <div class="input-data">
+      <input class="input-data__convert" />
+      <button class="input-data__convert-btn">
+        Convert
+      </button>
+    </div>
+    <div class="result">
+      <span class="bold text-primary">Resultado: </span>
+      <span class="light">three dollars</span>
+    </div>
+
+    <div class="banner">
+      <ng-adsense
+        [adClient]="'ca-pub-3401711569005699'"
+        [adSlot]="7259870550"
+        [display]="'inline-block'"
+        [width]="320"
+        [height]="108"
+      ></ng-adsense>
+    </div>
+  </section>
+</main>
