@@ -1,0 +1,145 @@
+.topbar {
+  background-color: #1CA78B;
+  height: 70px;
+  width: 100vw;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+
+  span {
+    font-weight: 900;
+    font-size: 28px;
+    color: #fff;
+  }
+}
+
+.text-primary {
+  color: #1CA78B;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.light {
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+
+    .text-hero {
+      display: flex;
+      justify-content: center;
+      margin-top: 70px;
+
+      &__title {
+        font-size: 1.8em;
+        font-weight: 900;
+        position: relative;
+        color: #525256;
+
+        svg {
+          position: absolute;
+          left: -70px;
+          top: -50px;
+        }
+      }
+    }
+  }
+
+  .select-convert-type {
+    margin-top: 52px;
+  }
+  .two-button-pills {
+    display: flex;
+    align-items: center;
+
+    .btn {
+      border: 2px solid #1CA78B;
+      cursor: pointer;
+      background-color: transparent;
+      width: 160px;
+      height: 52px;
+      color: #1CA78B;
+      font-weight: 900;
+      transition: 0.4s;
+      font-size: 16px;
+
+      &:hover {
+        background-color: #1CA78Bcc;
+        color: #fff;
+      }
+
+      &:first-child {
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+      }
+
+      &.active {
+        background-color: #1CA78B;
+        color: #fff;
+      }
+    }
+  }
+
+  .input-data {
+    margin-top: 30px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+    &__convert {
+      height: 60px;
+      flex: 1;
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+      border: 2px solid #1CA78B;
+      padding: 16px;
+      font-weight: 900;
+      color: #1CA78B;
+      font-size: 20px;
+    }
+
+    &__convert-btn {
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1CA78B;
+      cursor: pointer;
+      border: none;
+      font-weight: 900;
+      font-size: 15px;
+      color: #fff;
+      border-top-right-radius: 16px;
+      border-bottom-right-radius: 16px;
+    }
+  }
+
+  .result {
+    margin-top: 20px;
+
+  }
+
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
