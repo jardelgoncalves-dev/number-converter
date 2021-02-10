@@ -133,8 +133,18 @@ main {
 
   .result {
     margin-top: 20px;
+    display: none;
 
+    &.show {
+      display: flex;
+      align-items: center;
+    }
+
+    .result-number {
+      margin-left: 8px;
+    }
   }
+
 
   .banner {
     display: flex;
