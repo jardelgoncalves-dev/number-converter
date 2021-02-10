@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { convert } from '../util/convertNumber'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'conversions';
+  converterType = 'dollar'
+  result = ''
+  number = ''
+
+  onChangeConverterType(type: string): void {
+    this.converterType = type
+  }
+
+  onConvert() {
+    this.result = convert(this.number, this.converterType === 'dollar')
+  }
 }
