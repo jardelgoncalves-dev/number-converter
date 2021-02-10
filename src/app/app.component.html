@@ -22,18 +22,18 @@
     </header>
 
     <div class="two-button-pills select-convert-type">
-      <button class="btn active">Number to dollar</button>
-      <button class="btn">Number to text</button>
+      <button class="btn" [ngClass]="{'active': converterType === 'dollar'}" (click)="onChangeConverterType('dollar')">Number to dollar</button>
+      <button class="btn" [ngClass]="{'active': converterType === 'text'}" (click)="onChangeConverterType('text')">Number to word</button>
     </div>
     <div class="input-data">
-      <input class="input-data__convert" />
-      <button class="input-data__convert-btn">
+      <input (input)="number = $event.target.value" class="input-data__convert" />
+      <button class="input-data__convert-btn" (click)="onConvert()">
         Convert
       </button>
     </div>
-    <div class="result">
+    <div class="result" [ngClass]="{'show': result && result !== 'Number invalid'}">
       <span class="bold text-primary">Resultado: </span>
-      <span class="light">three dollars</span>
+      <span class="light result-number">{{ result }}</span>
     </div>
 
     <div class="banner">
